@@ -11,14 +11,14 @@ def blackAndWhite(image):
             else:
                 image.setPixel(x, y, whitePixel)
 
-def main(filename = "timtest.gif"):
+def main(filename = "file.gif"): # give file to be make b & w
     image = Image(filename)
     print("Close the image window to continue.")
     image.draw()
     blackAndWhite(image)
     print("Close the image window to quit")
     image.draw()
-    image.save("bwtim.gif")
+    image.save("") #give your file name
 if __name__ == "__main__":
     main()
     
